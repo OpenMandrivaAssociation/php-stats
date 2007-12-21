@@ -12,6 +12,7 @@ License:	PHP License
 URL:		http://pecl.php.net/package/stats/
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tar.bz2
 BuildRequires:	php-devel >= 3:5.2.0
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 Extension that provides few dozens routines for statistical computation for
