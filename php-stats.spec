@@ -6,7 +6,7 @@
 Summary:	Extension with routines for statistical computation for PHP
 Name:		php-%{modname}
 Version:	1.0.2
-Release:	%mkrel 23
+Release:	%mkrel 24
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/stats/
