@@ -11,6 +11,7 @@ Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/stats/
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tar.bz2
+Patch0:		stats-1.0.2-php54x.diff
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
@@ -22,6 +23,8 @@ PHP.
 
 %setup -q -n %{modname}-%{version}
 [ "../package.xml" != "/" ] && mv ../package*.xml .
+
+%patch0 -p0
 
 # lib64 fix
 perl -pi -e "s|/lib\b|/%{_lib}|g" config.m4
