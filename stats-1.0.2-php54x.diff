@@ -1,0 +1,23 @@
+--- statistics.c	2006-05-31 19:24:26.000000000 +0200
++++ statistics.c.oden	2012-05-06 11:08:58.246816655 +0200
+@@ -162,15 +162,15 @@ static int stats_array_data_compare(cons
+ {
+ 	Bucket *f;
+ 	Bucket *s;
+-	pval result;
+-	pval *first;
+-	pval *second;
++	zval result;
++	zval *first;
++	zval *second;
+  
+ 	f = *((Bucket **) a);
+ 	s = *((Bucket **) b);
+  
+-	first = *((pval **) f->pData);
+-	second = *((pval **) s->pData);
++	first = *((zval **) f->pData);
++	second = *((zval **) s->pData);
+ 
+ 	if (numeric_compare_function(&result, first, second TSRMLS_CC) == FAILURE) {
+ 		return 0;
