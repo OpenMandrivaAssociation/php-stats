@@ -9,7 +9,7 @@ Version:	1.0.3
 Release:	2
 Group:		Development/PHP
 License:	PHP License
-URL:		http://pecl.php.net/package/stats/
+URL:		https://pecl.php.net/package/stats/
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 BuildRequires:	php-devel
 
